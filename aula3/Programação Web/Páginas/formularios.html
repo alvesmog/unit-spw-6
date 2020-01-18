@@ -1,25 +1,47 @@
 <a href="../index.html">Voltar ao índice</a><br>
 <h3>Formulários</h3><br>
 
-<form name="pesquisa" method="POST">
-    Nome: <br>
-    <input type="text" name="nome"><br>
+<style>
+    #pesquisa{
+        line-height: 3;
+        background-color: grey;
+        width: 300px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        border-radius: 15px;
+    }
+    #enviar{
+        width: 200;
+        height: 40;
+        align-self: center;
+        background-color: rgb(1, 214, 19);
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 15px;
+        
+    }
+</style>
+
+<form name="pesquisa" method="POST" id="pesquisa">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome"><br>
     Gênero <br>
-    <select name="sexo">
-        <option value="">Selecione...</option>
+    <select name="sexo" id="sexo" multiple>
         <option value="M">Masculino</option>
         <option value="F">Feminino</option>
         <option value="O">Outro</option>
     </select><br>
     Área de formação: <br>
     <input type="checkbox" name="humanas">
-    humanas <br>
+    humanas 
     <input type="checkbox" name="exatas">
-    exatas <br>
+    exatas 
     <input type="checkbox" name="saúde">
     saúde <br>
+    Data de formação: <br>
+    <input type="date" name="" id=""><br>
     Está empregado na área? <br>
-    <input type="radio" name="empregado" value="s">Sim <br>
+    <input type="radio" name="empregado" value="s">Sim 
     <input type="radio" name="empregado" value="n">Não <br>
-    <input type="submit" value="Enviar!">
+    <input type="submit" value="Enviar!" id="enviar">
 </form>
