@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+        <a href="../index.html">Voltar ao índice</a><br>
+        <h3>Javascript</h3>
+
+        Mensagem escrita com JavaScript:<br>
+
+        <script type="text/javascript">document.write("Hello World!");</script><br>
+
+        Mensagem pop-up, botão chamando função: <br>
+        <button onClick="alerta()">Pressione aqui</button><br>
+
+        Mensagem pop-up, com event listener: <br>
+        <button id="hello">Pressione aqui também</button>
+
+
+        <script type="text/javascript">
+
+            function alerta(){
+                alert("Hello World!");
+            }
+
+            window.onload = function(){
+                document.getElementById("hello").addEventListener("click", function(){
+                    alert("Hello World!");
+                }, false);
+            }
+
+        </script>
+
+
+
+    </body>
+
+</html>
