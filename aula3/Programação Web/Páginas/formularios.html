@@ -1,6 +1,18 @@
-<form method="POST">
-    <a href="../index.html">Voltar ao índice</a><br>
-    <h3>Formulários</h3><br>
-    <input type="text">
-    <input type="submit" value="enviar!">
+<a href="../index.html">Voltar ao índice</a><br>
+<h3>Formulários</h3><br>
+
+<form name="pesquisa" method="POST">
+    Nome: <br>
+    <input type="text" name="nome"><br>
+    Área de formação: <br>
+    <input type="checkbox" name="humanas">
+    humanas <br>
+    <input type="checkbox" name="exatas">
+    exatas <br>
+    <input type="checkbox" name="saúde">
+    saúde <br>
+    Está empregado na área? <br>
+    <input type="radio" name="empregado" value="s">Sim <br>
+    <input type="radio" name="empregado" value="n">Não <br>
+    <input type="submit" value="Enviar!">
 </form>
