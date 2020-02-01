@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
+    <!-- Cabeçalho do documento HTML-->
     <head>
         <title>Atividade 2</title>
         <style>
             img{
                 height: 400px; width: 400px;
             }
+            a.voltar{
+                background-color: grey;
+                border-radius: 30px;
+                height: 30px;
+            }
         </style>
     </head>
-    <body>
-        <H1>Exemplo de âncoras</H1>
 
+    <!-- Corpo do documento HTML -->
+    <body>
+        <H1 id="topo">Exemplo de âncoras</H1>
+
+        <!-- Lista com links internos -->
         <ul>
             <li> <a href="#brasil">Brasil</a></li>
             <li><a href="#historia">História</a></li>
@@ -19,19 +28,35 @@
             <li><a href="#economia">Economia</a></li>
         </ul>
 
-        <h3 id="brasil">Brasil</h3>
+        <!-- Imagens inseridas -->
+
+        <h3 id="brasil">Brasil</h3> 
             <img src="./imagens/depositphotos_111145290-stock-photo-brazil-from-space.jpg">
+            <a href="#topo" class="voltar">Voltar para o topo</a>
 
         <h3 id="historia">História<h3>
             <img src="./imagens/chegada-portugueses-brasil.jpg" alt="">
+            <a href="#topo" class="voltar">Voltar para o topo</a>
                     
         <h3 id="geografia">Geografia</h3>
             <img src="./imagens/geologia-brasil1.jpg" alt="">
+            <a href="#topo" class="voltar">Voltar para o topo</a>
 
         <h3 id="demografia">Demografia</h3>
             <img src="./imagens/250px-ARCHELLA_E_THERY_Img_07.png" alt="">
+            <a href="#topo" class="voltar">Voltar para o topo</a>
 
         <h3 id="economia">Economia</h3>
             <img src="./imagens/5economia.jpeg" alt="">
+            <a href="#topo" class="voltar">Voltar para o topo</a>
+
+        <br>   
+
+        <!-- PDF com IFRAME -->
+
+        <iframe src="./PDF/walker2014.pdf" width="1200px" height="650px" frameborder="0"></iframe>
+
+
+
     </body>
 </html>

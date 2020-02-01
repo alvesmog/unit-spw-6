@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Script</title>
+</head>
+
+<body>
+    <header>
+        <h5>Script de soma</h5>
+        <script>
+            window.onload = function popUp() {
+                let a = parseInt(window.prompt("Digite um número"));
+                let b = parseInt(window.prompt("Digite outro número:"));
+                soma(a, b)
+            }
+
+            function soma(a, b) {
+                let result = a+b;
+                window.alert("A soma é: " + result);
+            }
+        </script>
+    </header>
+</body>
+
+</html>
