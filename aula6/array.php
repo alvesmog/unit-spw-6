@@ -11,4 +11,6 @@ echo "$professor </br>";
 
 echo "$valorLogico";
 
+
+
 ?>
